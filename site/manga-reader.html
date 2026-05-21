@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mizuena • Reader</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-page="manga-reader">
+  <header class="topbar">
+    <a class="back-link" href="manga.html">← Manga</a>
+    <h1 class="logo" id="reader-title">Reader</h1>
+    <button id="bookmark-btn" class="btn">Bookmark</button>
+  </header>
+  <main class="page reader-page">
+    <div class="reader-controls">
+      <button id="prev-page" class="btn">Prev</button>
+      <span id="page-counter">0 / 0</span>
+      <button id="next-page" class="btn">Next</button>
+    </div>
+    <section id="reader-content" class="reader-content" aria-label="Manga pages"></section>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

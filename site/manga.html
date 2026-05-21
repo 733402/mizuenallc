@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mizuena • Manga</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-page="manga">
+  <header class="topbar">
+    <h1 class="logo">Manga</h1>
+  </header>
+  <main class="page">
+    <div class="toolbar">
+      <input id="manga-search" type="search" placeholder="Search manga..." aria-label="Search manga" />
+    </div>
+    <section>
+      <div id="manga-grid" class="card-grid"></div>
+    </section>
+  </main>
+  <nav class="bottom-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="anime.html">Anime</a>
+    <a href="manga.html" class="active">Manga</a>
+    <a href="music.html">Music</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

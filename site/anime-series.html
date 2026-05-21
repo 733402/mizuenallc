@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mizuena • Series</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-page="anime-series">
+  <header class="topbar">
+    <a class="back-link" href="anime.html">← Anime</a>
+    <h1 class="logo" id="series-title">Series</h1>
+  </header>
+  <main class="page">
+    <section class="series-layout">
+      <video id="video-player" controls playsinline preload="metadata" class="player"></video>
+      <div class="player-actions">
+        <label for="subtitle-select">Subtitles</label>
+        <select id="subtitle-select">
+          <option value="">None</option>
+        </select>
+      </div>
+    </section>
+    <section>
+      <h2>Episodes</h2>
+      <ul id="episode-list" class="list"></ul>
+    </section>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

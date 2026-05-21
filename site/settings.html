@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mizuena • Settings</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-page="settings">
+  <header class="topbar">
+    <h1 class="logo">Settings</h1>
+  </header>
+  <main class="page">
+    <section class="panel">
+      <h2>Appearance</h2>
+      <label class="toggle-row" for="theme-toggle">
+        <span>Light mode</span>
+        <input id="theme-toggle" type="checkbox" />
+      </label>
+    </section>
+    <section class="panel">
+      <h2>Layout</h2>
+      <label for="card-size">Card size</label>
+      <select id="card-size">
+        <option value="compact">Compact</option>
+        <option value="cozy">Cozy</option>
+      </select>
+    </section>
+  </main>
+  <nav class="bottom-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="anime.html">Anime</a>
+    <a href="manga.html">Manga</a>
+    <a href="music.html">Music</a>
+    <a href="settings.html" class="active">Settings</a>
+  </nav>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

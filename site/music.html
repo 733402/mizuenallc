@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mizuena • Music</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body data-page="music">
+  <header class="topbar">
+    <h1 class="logo">Music</h1>
+  </header>
+  <main class="page mini-player-space">
+    <div id="playlist-tabs" class="shortcut-grid"></div>
+    <section>
+      <ul id="track-list" class="list"></ul>
+    </section>
+  </main>
+  <section id="mini-player" class="mini-player" aria-label="Mini player">
+    <img id="mini-cover" alt="" loading="lazy" />
+    <div>
+      <p id="mini-title">No track</p>
+      <p id="mini-artist">—</p>
+    </div>
+    <button id="mini-toggle" class="btn">Play</button>
+    <audio id="audio-player" preload="metadata"></audio>
+  </section>
+  <nav class="bottom-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="anime.html">Anime</a>
+    <a href="manga.html">Manga</a>
+    <a href="music.html" class="active">Music</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

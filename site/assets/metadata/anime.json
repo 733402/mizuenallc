@@ -1,0 +1,39 @@
+[
+  {
+    "slug": "bloom-into-you",
+    "title": "Bloom Into You",
+    "cover": "assets/covers/bloom.svg",
+    "folder": "Bloom Into You",
+    "type": "anime",
+    "year": "2018",
+    "status": "Completed",
+    "description": "A gentle story about identity and love.",
+    "genres": ["Romance", "Drama"],
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "file": "../Anime/localanime/Bloom Into You/ep1.mp4",
+        "subtitle": "assets/subtitles/bloom-ep1.vtt",
+        "duration": "24m"
+      }
+    ]
+  },
+  {
+    "slug": "frieren",
+    "title": "Frieren: Beyond Journey's End",
+    "cover": "assets/covers/frieren.svg",
+    "folder": "Frieren",
+    "type": "anime",
+    "year": "2023",
+    "status": "Ongoing",
+    "description": "Quiet fantasy after the hero's party ends.",
+    "genres": ["Fantasy", "Drama"],
+    "episodes": [
+      {
+        "title": "Episode 1",
+        "file": "../Anime/local/Frieren/ep1.mp4",
+        "duration": "24m"
+      }
+    ]
+  }
+]

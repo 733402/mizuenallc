@@ -1,0 +1,16 @@
+{
+  "featured": {
+    "title": "Bloom Into You",
+    "description": "A cozy evening rewatch with soft yuri vibes."
+  },
+  "continue": [
+    { "type": "anime", "slug": "bloom-into-you" },
+    { "type": "manga", "slug": "skip-and-loafer" },
+    { "type": "music", "slug": "hana-ni-natte" }
+  ],
+  "recent": [
+    { "type": "anime", "slug": "frieren" },
+    { "type": "manga", "slug": "bocchi-manga" },
+    { "type": "music", "slug": "idol" }
+  ]
+}

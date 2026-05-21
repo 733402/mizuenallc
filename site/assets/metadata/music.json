@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "hana-ni-natte",
+    "title": "Hana ni Natte",
+    "artist": "Ryokuoushoku Shakai",
+    "album": "Frieren OP",
+    "cover": "assets/covers/frieren.svg",
+    "file": "../Music/hana-ni-natte.mp3",
+    "playlists": ["Anime Openings", "Favorites"]
+  },
+  {
+    "slug": "idol",
+    "title": "Idol",
+    "artist": "YOASOBI",
+    "album": "Oshi no Ko",
+    "cover": "assets/covers/idol.svg",
+    "file": "../Music/idol.mp3",
+    "playlists": ["Anime Openings"]
+  }
+]

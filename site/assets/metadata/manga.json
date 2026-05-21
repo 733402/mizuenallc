@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "skip-and-loafer",
+    "title": "Skip and Loafer",
+    "author": "Misaki Takamatsu",
+    "cover": "assets/covers/skip.svg",
+    "folder": "Skip and Loafer",
+    "type": "manga",
+    "pages": [
+      "assets/covers/skip-p1.svg",
+      "assets/covers/skip-p2.svg",
+      "assets/covers/skip-p3.svg"
+    ]
+  },
+  {
+    "slug": "bocchi-manga",
+    "title": "Bocchi the Rock!",
+    "author": "Aki Hamazi",
+    "cover": "assets/covers/bocchi.svg",
+    "folder": "Bocchi the Rock!",
+    "type": "manga",
+    "cbz": "../Manga/Bocchi the Rock Vol 1.cbz"
+  }
+]

@@ -1,0 +1,29 @@
+#featured-banner .banner h2 { margin-top: 4px; font-size: 1.35rem; }
+#featured-banner .banner p { color: var(--muted); margin-top: 6px; }
+
+.series-layout { margin-bottom: 14px; }
+.player-actions { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+
+.reader-page { padding-top: 10px; }
+.reader-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.reader-content {
+  display: grid;
+  gap: 10px;
+}
+
+.reader-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, var(--accent), transparent 84%);
+}
+
+html[data-card-size="compact"] { --card-w: 120px; }
+html[data-card-size="cozy"] { --card-w: 150px; }

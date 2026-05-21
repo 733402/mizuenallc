@@ -1,0 +1,43 @@
+import { loadJSON } from "../core/data.js";
+import { card, shortcut } from "../core/components.js";
+
+export async function initHome() {
+  const [home, anime, manga, music] = await Promise.all([
+    loadJSON("assets/metadata/home.json"),
+    loadJSON("assets/metadata/anime.json"),
+    loadJSON("assets/metadata/manga.json"),
+    loadJSON("assets/metadata/music.json")
+  ]);
+
+  const featured = home.featured;
+  document.getElementById("featured-banner").innerHTML = `
+    <article class="banner">
+      <p>Featured</p>
+      <h2>${featured.title}</h2>
+      <p>${featured.description}</p>
+    </article>`;
+
+  const byType = { anime, manga, music };
+  const continueItems = home.continue.map((entry) => {
+    const item = byType[entry.type].find((i) => i.slug === entry.slug);
+    if (!item) return "";
+    const href = entry.type === "anime" ? `anime-series.html?slug=${item.slug}` : entry.type === "manga" ? `manga-reader.html?slug=${item.slug}` : "music.html";
+    return card({ ...item, sub: `Continue ${entry.type}` }, href);
+  });
+  document.getElementById("continue-grid").innerHTML = continueItems.join("");
+
+  const recentItems = home.recent.map((entry) => {
+    const item = byType[entry.type].find((i) => i.slug === entry.slug);
+    if (!item) return "";
+    const href = entry.type === "anime" ? "anime.html" : entry.type === "manga" ? "manga.html" : "music.html";
+    return card({ ...item, sub: `New ${entry.type}` }, href);
+  });
+  document.getElementById("recent-grid").innerHTML = recentItems.join("");
+
+  document.getElementById("shortcuts").innerHTML = [
+    shortcut("Anime", "anime.html"),
+    shortcut("Manga", "manga.html"),
+    shortcut("Music", "music.html"),
+    shortcut("Settings", "settings.html")
+  ].join("");
+}

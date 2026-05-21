@@ -18,10 +18,25 @@ export async function initHome() {
     </article>`;
 
   const byType = { anime, manga, music };
+  const entryHref = (type, item, mode) => {
+    const routes = {
+      continue: {
+        anime: `anime-series.html?slug=${item.slug}`,
+        manga: `manga-reader.html?slug=${item.slug}`,
+        music: "music.html"
+      },
+      recent: {
+        anime: "anime.html",
+        manga: "manga.html",
+        music: "music.html"
+      }
+    };
+    return routes[mode][type];
+  };
   const continueItems = home.continue.map((entry) => {
     const item = byType[entry.type].find((i) => i.slug === entry.slug);
     if (!item) return "";
-    const href = entry.type === "anime" ? `anime-series.html?slug=${item.slug}` : entry.type === "manga" ? `manga-reader.html?slug=${item.slug}` : "music.html";
+    const href = entryHref(entry.type, item, "continue");
     return card({ ...item, sub: `Continue ${entry.type}` }, href);
   });
   document.getElementById("continue-grid").innerHTML = continueItems.join("");
@@ -29,7 +44,7 @@ export async function initHome() {
   const recentItems = home.recent.map((entry) => {
     const item = byType[entry.type].find((i) => i.slug === entry.slug);
     if (!item) return "";
-    const href = entry.type === "anime" ? "anime.html" : entry.type === "manga" ? "manga.html" : "music.html";
+    const href = entryHref(entry.type, item, "recent");
     return card({ ...item, sub: `New ${entry.type}` }, href);
   });
   document.getElementById("recent-grid").innerHTML = recentItems.join("");

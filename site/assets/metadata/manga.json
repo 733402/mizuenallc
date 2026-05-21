@@ -19,6 +19,9 @@
     "cover": "assets/covers/bocchi.svg",
     "folder": "Bocchi the Rock!",
     "type": "manga",
-    "cbz": "../Manga/Bocchi the Rock Vol 1.cbz"
+    "pages": [
+      "assets/covers/skip-p1.svg",
+      "assets/covers/skip-p2.svg"
+    ]
   }
 ]

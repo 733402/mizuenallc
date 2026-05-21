@@ -20,5 +20,5 @@ Open `http://127.0.0.1:8000/index.html`.
 ## Notes
 
 - Anime, manga, and music pages render from metadata JSON.
-- Manga reader supports extracted image pages and optional CBZ loading via JSZip.
+- Manga reader supports extracted image pages defined in metadata.
 - Theme and layout preferences are saved to `localStorage`.
